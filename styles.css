@@ -1,0 +1,128 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-image: url(monu.JPG);
+	background-size: cover;
+	font-family: sans-serif;
+}
+.contact-title{
+	margin-top: 100px;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 4s ease-in-out;
+}
+.contact-title h1{
+	font-size: 32px;
+	line-height: 10px;
+}
+form{
+	margin-top: 50px;
+	transition: all 4s ease-in-out;
+}
+.form-control{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: name;
+	border-bottom: 1px solid gray;
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+input{
+	height: 45px;
+}
+form .submit{
+	background: #ff5722;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+}
+form .submit:hover{
+	background-color: #f44336;
+	cursor: pointer;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+
+}
+.navBar{
+	color: rgb(100,100,100);
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 20px;
+}
+.navi-Links{
+	display: flex;
+	justify-content: space-around;
+	width: 40%
+}
+.navi-Links li{
+	list-style: none;
+}
+.navi-Links a{
+	color: rgb(20,20,20);
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.divi div{
+	width: 25px;
+	height: 3px;
+	background-color: rgb(100,100,100);
+	margin: 5px;
+}
+.divi{
+	display: none;
+	cursor: pointer;
+}
+#content {
+  overflow-y: scroll;
+    height:900px;
+    background-image: url('cover.png');
+}
+@media screen and (max-width:1024px){
+	.navi-Links{
+		width: 60%
+	}
+}
+@media screen and (max-width:768px){
+	body{
+		overflow-x: hidden;
+	}
+	.navi-Links{
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-Links li{
+		opacity: 0;
+
+	}
+	.divi{
+		display: block;
+	}
+}
+.nav-active{
+	transform: translateX(0%);
+}
+
+
+
